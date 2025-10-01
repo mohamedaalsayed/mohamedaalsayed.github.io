@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Mohamed Adel Al-Sayed",
+    "label": "Software Engineering Enthusiast",
+    "image": "/mohamed-adel.webp",
+    "email": "contact@mohamedadel.tech",
+    "phone": "+201095370591",
+    "summary": "A recent graduate of the Egyptian E-Learning University with a degree in Computers and Information Technology, bringing strong skills in programming (C, C++, C#, Java, Python, JavaScript, TypeScript) and core areas such as data structures, algorithms, and software engineering. Experienced in Object-Oriented Programming, web technologies, and database systems, with a solid foundation in problem-solving and technical expertise.",
+    "location": {
+      "city": "Ismailia",
+      "country": "Egypt"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "mohamedaalsayed",
+        "url": "https://github.com/mohamedaalsayed"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mohamedaalsayed",
+        "url": "https://linkedin.com/in/mohamedaalsayed/"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "The Egyptian E-Learning University",
+      "url": "https://www.eelu.edu.eg/",
+      "area": "Computers and Information Technology",
+      "studyType": "IT",
+      "startDate": "2021-09-20",
+      "endDate": "2025-06-01",
+      "score": "",
+      "courses": [
+        "Programming Techniques",
+        "Machine Learning",
+        "Operating Systems",
+        "Data Structures",
+        "Algorithms analysis and design"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "C",
+        "C++",
+        "Java",
+        "C#",
+        "Bash Scripting",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Cloud Computing & DevOps",
+      "level": "Intermediate",
+      "keywords": [
+        "Docker",
+        "Microservices",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Git"
+      ]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "level": "Intermediate",
+      "keywords": [
+        "React",
+        "Express.js",
+        "NestJS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "projects": [],
+  "awards": [],
+  "volunteer": [],
+  "interests": [],
+  "meta": {
+    "version": "v1.0.0",
+    "lastModified": "2025-09-30T01:39:00"
+  }
+}

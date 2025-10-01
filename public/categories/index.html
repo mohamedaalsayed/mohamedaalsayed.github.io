@@ -81,7 +81,7 @@
   <meta property="og:site_name" content="mohamedadel.tech">
   <meta property="og:title" content="Categories">
   <meta property="og:description" content="A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes.">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
 
@@ -126,15 +126,559 @@
 /*! purgecss start ignore */
 
 /* Typefaces */
-@import "typeface-roboto-slab";
-@import "typeface-fira-code";
+
+/* roboto-slab-100normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src:
+    local('Roboto Slab Thin '),
+    local('Roboto Slab-Thin'),
+    url('/fonts/roboto-slab-latin-100.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-100.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-200normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src:
+    local('Roboto Slab Extra Light '),
+    local('Roboto Slab-Extra Light'),
+    url('/fonts/roboto-slab-latin-200.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-200.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-300normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Roboto Slab Light '),
+    local('Roboto Slab-Light'),
+    url('/fonts/roboto-slab-latin-300.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-300.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-400normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Roboto Slab Regular '),
+    local('Roboto Slab-Regular'),
+    url('/fonts/roboto-slab-latin-400.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-400.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-500normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local('Roboto Slab Medium '),
+    local('Roboto Slab-Medium'),
+    url('/fonts/roboto-slab-latin-500.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-500.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-600normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local('Roboto Slab SemiBold '),
+    local('Roboto Slab-SemiBold'),
+    url('/fonts/roboto-slab-latin-600.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-600.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-700normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Roboto Slab Bold '),
+    local('Roboto Slab-Bold'),
+    url('/fonts/roboto-slab-latin-700.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-700.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-800normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    local('Roboto Slab ExtraBold '),
+    local('Roboto Slab-ExtraBold'),
+    url('/fonts/roboto-slab-latin-800.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-800.woff') format('woff'); /* Modern Browsers */
+}
+
+/* roboto-slab-900normal - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local('Roboto Slab Black '),
+    local('Roboto Slab-Black'),
+    url('/fonts/roboto-slab-latin-900.woff2') format('woff2'), 
+    url('/fonts/roboto-slab-latin-900.woff') format('woff'); /* Modern Browsers */
+}
+
+/* fira-code-300normal - latin */
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Fira Code Light '),
+    local('Fira Code-Light'),
+    url('/fonts/fira-code-latin-300.woff2') format('woff2'), 
+    url('/fonts/fira-code-latin-300.woff') format('woff'); /* Modern Browsers */
+}
+
+/* fira-code-400normal - latin */
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Fira Code Regular '),
+    local('Fira Code-Regular'),
+    url('/fonts/fira-code-latin-400.woff2') format('woff2'), 
+    url('/fonts/fira-code-latin-400.woff') format('woff'); /* Modern Browsers */
+}
+
+/* fira-code-500normal - latin */
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local('Fira Code Medium '),
+    local('Fira Code-Medium'),
+    url('/fonts/fira-code-latin-500.woff2') format('woff2'), 
+    url('/fonts/fira-code-latin-500.woff') format('woff'); /* Modern Browsers */
+}
+
+/* fira-code-600normal - latin */
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local('Fira Code SemiBold '),
+    local('Fira Code-SemiBold'),
+    url('/fonts/fira-code-latin-600.woff2') format('woff2'), 
+    url('/fonts/fira-code-latin-600.woff') format('woff'); /* Modern Browsers */
+}
+
+/* fira-code-700normal - latin */
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Fira Code Bold '),
+    local('Fira Code-Bold'),
+    url('/fonts/fira-code-latin-700.woff2') format('woff2'), 
+    url('/fonts/fira-code-latin-700.woff') format('woff'); /* Modern Browsers */
+}
 
 /* Normalize */
-@import "normalize.css/normalize.css";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
 
 /*! purgecss end ignore */
 
 /*! CC BY-SA 3.0 License | https://stackoverflow.com/a/36118384/1154965 */
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -145,19 +689,13 @@
 }
 
 /* Default license header for non-vendor CSS source code that follows */
+
 /*! MIT License | github.com/schnerring/hugo-theme-gruvbox */
+
 /*
   Bootstrap 5 breakpoints
   See: https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints
 */
-@custom-media --sm (min-width: 576px);
-@custom-media --md (min-width: 768px);
-@custom-media --lg (min-width: 992px);
-@custom-media --xl (min-width: 1200px);
-@custom-media --xxl (min-width: 1400px);
-
-
-
 
 :root[data-theme="light"] {
   --bg: var(--bg0);
@@ -190,11 +728,11 @@
   --aqua2: #427b58;
   --orange1: #d65d0e;
   --orange2: #af3a03;
+}
 
-  & .light--hidden {
+[data-theme="light"]:root .light--hidden {
     display: none;
   }
-}
 
 :root[data-theme="dark"] {
   --bg: var(--bg0);
@@ -227,17 +765,18 @@
   --aqua2: #8ec07c;
   --orange1: #d65d0e;
   --orange2: #fe8019;
+}
 
-  & .dark--hidden {
+[data-theme="dark"]:root .dark--hidden {
     display: none;
   }
-}
 
 :root {
   
   --primary: var(--blue1);
   --primary-alt: var(--blue2);
 }
+
 :root {
   --font-monospace: "Fira Code", "Lucida Console", Monaco, monospace;
   --font-sans-serif: Verdana, Helvetica, sans-serif;
@@ -288,11 +827,6 @@ figcaption {
   font-size: 0.9rem;
 }
 
-*::-moz-selection {
-  color: var(--fg0);
-  background: var(--bg4);
-}
-
 *::selection {
   color: var(--fg0);
   background: var(--bg4);
@@ -308,11 +842,11 @@ h6 {
   font-family: var(--font-monospace);
   font-weight: 300;
   line-height: 1.4;
+}
 
-  & code {
+:is(h1,h2,h3,h4,h5,h6) code {
     font-size: 1em;
   }
-}
 
 h2,
 h3,
@@ -339,7 +873,7 @@ h3 {
   font-size: 1.625rem;
 }
 
-@media (--md) {
+@media (min-width: 768px) {
   h1 {
     font-size: 2.375rem;
   }
@@ -424,13 +958,9 @@ th {
   font-family: var(--font-monospace);
 }
 
-code,
-kbd {
-  & code,
-  & kbd {
+:is(code,kbd) code,:is(code,kbd) kbd {
     background: var(--bg2);
   }
-}
 
 blockquote,
 pre {
@@ -441,29 +971,29 @@ pre {
   /* TODO is !important really needed because of Prism? */
   background: var(--bg1) !important;
   overflow: auto;
+}
 
-  & code {
+pre code {
     background: none;
   }
-}
 
 blockquote,
 blockquote.twitter-tweet {
   border-left: var(--primary-alt) 5px solid;
   margin: 0.5rem 0;
+}
 
-  & code {
+:is(blockquote,blockquote.twitter-tweet) code {
     background: var(--bg2);
   }
 
-  & p:first-of-type {
+:is(blockquote,blockquote.twitter-tweet) p:first-of-type {
     margin-top: 0;
   }
 
-  & p:last-of-type {
+:is(blockquote,blockquote.twitter-tweet) p:last-of-type {
     margin-bottom: 0;
   }
-}
 
 blockquote.twitter-tweet {
   border-color: var(--blue2);
@@ -471,16 +1001,17 @@ blockquote.twitter-tweet {
   font: inherit;
   font-size: inherit;
   line-height: inherit;
+}
 
-  & a {
+blockquote.twitter-tweet a {
     color: var(--blue2);
   }
 
-  & a:hover {
+blockquote.twitter-tweet a:hover {
     color: var(--blue1);
     text-decoration: none !important;
   }
-}
+
 pre::-webkit-scrollbar {
   height: 0.5rem;
   scrollbar-width: auto;
@@ -495,6 +1026,7 @@ pre::-webkit-scrollbar-thumb {
   background: var(--bg4);
   border-radius: 0.2rem;
 }
+
 .layout {
   display: grid;
   grid-template-areas:
@@ -538,11 +1070,15 @@ footer {
   margin-top: 3rem;
   position: sticky;
   top: 2rem;
-
-  @media (--lg) {
-    display: flex;
-  }
 }
+
+@media (min-width: 992px) {
+
+.sidebar {
+    display: flex;
+}
+  }
+
 header {
   display: grid;
   font-family: var(--font-monospace);
@@ -557,12 +1093,12 @@ header {
   display: flex;
   font-weight: 700;
   grid-area: heading;
+}
 
-  &:hover .logo__cursor {
+.logo:hover .logo__cursor {
     animation: 1s blink infinite;
     opacity: 1;
   }
-}
 
 .logo__chevron,
 .logo__cursor {
@@ -577,7 +1113,7 @@ header {
   display: none;
 }
 
-@media (--md) {
+@media (min-width: 768px) {
   .logo__text {
     display: block;
   }
@@ -601,28 +1137,23 @@ header {
   padding: 0 0.5rem;
   visibility: hidden; /* Hide until flexsearch index is initialized */
   width: 100%;
+}
 
-  &:hover {
+#search__text:hover {
     border-color: var(--bg3);
   }
 
-  &:focus {
+#search__text:focus {
     border-color: var(--bg4);
   }
 
-  &::-moz-placeholder {
+#search__text::placeholder {
     color: var(--fg3);
   }
 
-  &::placeholder {
-    color: var(--fg3);
+#search__text[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
   }
-
-  &[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-            appearance: none;
-  }
-}
 
 #search__suggestions {
   background: var(--bg);
@@ -636,7 +1167,7 @@ header {
   z-index: 1000;
 }
 
-@media (--md) {
+@media (min-width: 768px) {
   .search {
     position: relative;
   }
@@ -654,19 +1185,17 @@ header {
   border-bottom: 1px dashed var(--bg2);
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
 
-  &:focus,
-  &:focus-visible,
-  &:hover {
+.search__suggestion-item:focus,.search__suggestion-item:focus-visible,.search__suggestion-item:hover {
     background: var(--bg1);
     cursor: pointer;
     outline: none;
   }
 
-  &:last-child {
+.search__suggestion-item:last-child {
     border: none;
   }
-}
 
 .search__suggestion-title,
 .search__suggestion-description {
@@ -697,54 +1226,59 @@ header {
   display: flex;
   grid-area: theme-toggle;
   margin: 0 1rem;
+}
 
-  &:hover {
+.theme__toggle:hover {
     color: var(--yellow2);
   }
 
-  & svg {
+.theme__toggle svg {
     height: 28px;
     width: 28px;
   }
-}
 
 /* TODO: simplify deep nesting */
+
 nav#menu {
   align-items: center;
   display: flex;
   grid-area: nav;
   justify-content: flex-end;
+}
 
-  & .menu__item {
+nav#menu .menu__item {
     color: var(--fg);
+  }
 
-    &:hover {
+:is(nav#menu .menu__item):hover {
       color: var(--fg3);
       cursor: pointer;
     }
-  }
 
-  & ul {
+nav#menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  & ul.menu--horizontal {
+nav#menu ul.menu--horizontal {
     align-items: center;
     display: none;
+  }
 
-    & li {
+:is(nav#menu ul.menu--horizontal) li {
       display: inline-block;
       margin: 0 0.75rem;
     }
 
-    @media (--md) {
-      display: flex;
-    }
-  }
+@media (min-width: 768px) {
 
-  & ul.menu--vertical {
+nav#menu ul.menu--horizontal {
+      display: flex;
+  }
+    }
+
+nav#menu ul.menu--vertical {
     background: var(--fg0);
     bottom: 0;
     margin: 0;
@@ -756,133 +1290,132 @@ nav#menu {
     transition: transform 0.5s cubic-bezier(0.9, 0, 0.1, 1);
     width: 50%;
     z-index: 10;
-
-    & .menu__item {
-      color: var(--bg1);
-
-      &:hover {
-        color: var(--bg4);
-      }
-    }
   }
 
-  & .menu__burger {
+:is(nav#menu ul.menu--vertical) .menu__item {
+      color: var(--bg1);
+    }
+
+:is(:is(nav#menu ul.menu--vertical) .menu__item):hover {
+        color: var(--bg4);
+      }
+
+nav#menu .menu__burger {
     display: flex;
     height: 24px;
     width: 24px;
+  }
 
-    & > * {
+:is(nav#menu .menu__burger) > * {
       position: absolute;
     }
 
-    & svg {
+:is(nav#menu .menu__burger) svg {
       width: inherit;
       z-index: 20;
       height: inherit;
+    }
 
-      & line {
+:is(:is(nav#menu .menu__burger) svg) line {
         transition-duration: 0.5s;
         transition-property: stroke, opacity, transform;
         transition-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
       }
 
-      & line:nth-of-type(1) {
+:is(:is(nav#menu .menu__burger) svg) line:nth-of-type(1) {
         transform-origin: center 6px;
       }
 
-      & line:nth-of-type(2) {
+:is(:is(nav#menu .menu__burger) svg) line:nth-of-type(2) {
         transform-origin: center 12px;
       }
 
-      & line:nth-of-type(3) {
+:is(:is(nav#menu .menu__burger) svg) line:nth-of-type(3) {
         transform-origin: center 18px;
       }
-    }
 
-    & input {
+:is(nav#menu .menu__burger) input {
       height: inherit;
       opacity: 0;
       width: inherit;
       z-index: 30;
+    }
 
-      &:checked {
-        & ~ ul.menu--vertical {
+:is(:is(nav#menu .menu__burger) input):checked ~ ul.menu--vertical {
           transform: none;
         }
 
-        & ~ svg {
+:is(:is(nav#menu .menu__burger) input):checked ~ svg {
           stroke: var(--bg1);
+        }
 
-          & line:nth-of-type(1) {
+:is(:is(:is(nav#menu .menu__burger) input):checked ~ svg) line:nth-of-type(1) {
             transform: translate(0, 6px) rotate(45deg);
           }
 
-          & line:nth-of-type(2) {
+:is(:is(:is(nav#menu .menu__burger) input):checked ~ svg) line:nth-of-type(2) {
             opacity: 0;
             transform: scale(0.2);
           }
 
-          & line:nth-of-type(3) {
+:is(:is(:is(nav#menu .menu__burger) input):checked ~ svg) line:nth-of-type(3) {
             transform: translate(0, -6px) rotate(-45deg);
           }
-        }
-      }
+
+@media (min-width: 768px) {
+
+nav#menu .menu__burger {
+      display: none;
+  }
     }
 
-    @media (--md) {
-      display: none;
-    }
-  }
-}
 .sidebar {
   font-family: var(--font-monospace);
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2.5rem;
+}
 
-  & hr {
+.sidebar hr {
     margin: 1.5rem auto;
   }
 
-  & svg {
+.sidebar svg {
     fill: var(--fg);
   }
-}
 
 .sidebar__heading {
   font-size: 1.3rem;
 }
 
-aside.toc {
-  & a {
+aside.toc a {
     color: var(--primary-alt);
   }
 
-  & a:hover {
+aside.toc a:hover {
     color: var(--primary);
   }
 
-  & ul {
+aside.toc ul {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
 
-    & ul {
+:is(aside.toc ul) ul {
       font-size: 0.9rem;
       margin-left: 0.5rem;
     }
 
-    & li {
+:is(aside.toc ul) li {
       line-height: 1.1;
+    }
 
-      & a {
+:is(:is(aside.toc ul) li) a {
         display: block;
         padding: 0.2rem 0;
       }
-    }
-  }
-}
 
 .jr-basics__image {
   background: var(--bg1);
@@ -895,15 +1428,13 @@ aside.toc {
   margin: 0.75rem 0;
 }
 
-.jr-basics__profile {
-  & a:hover {
+.jr-basics__profile a:hover {
     color: var(--fg3);
+  }
 
-    & svg {
+:is(.jr-basics__profile a:hover) svg {
       fill: var(--fg3);
     }
-  }
-}
 
 .tag-cloud {
   line-height: 1.1;
@@ -917,20 +1448,17 @@ aside.toc {
 .tag-cloud__tag--active {
   text-decoration: underline;
 }
+
 .post,
 .content-section {
   border-bottom: 2px dotted var(--bg1);
   padding: 2rem 0;
 }
 
-.post {
-  & figure,
-  & img:not(figure img),
-  & video:not(figure video) {
+.post figure,.post img:not(figure img),.post video:not(figure video) {
     margin: 0.5rem 0;
     box-sizing: border-box;
   }
-}
 
 .post-header,
 .post-content__read-more {
@@ -950,16 +1478,13 @@ aside.toc {
   margin-top: 1.3rem;
 }
 
-.post-header,
-.post-content {
-  & a {
+:is(.post-header,.post-content) a {
     color: var(--primary-alt);
   }
 
-  & a:hover {
+:is(.post-header,.post-content) a:hover {
     color: var(--primary);
   }
-}
 
 .post-tags {
   align-items: center;
@@ -972,26 +1497,20 @@ aside.toc {
 .post-tag {
   font-size: 0.9rem;
   line-height: 1;
+}
 
-  &::before {
+.post-tag::before {
     content: "#";
   }
-}
 
 .post-heading__anchor {
   display: none;
 }
 
-h1:hover,
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover,
-h6:hover {
-  & .post-heading__anchor {
+:is(h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover) .post-heading__anchor {
     display: inline-block;
   }
-}
+
 .jr__item-meta {
   flex-direction: column;
 }
@@ -1067,6 +1586,7 @@ h6:hover {
 .jr-basics__profile-icon {
   padding: 0 0.75rem;
 }
+
 .jr__item-meta {
   font-family: var(--font-monospace);
 }
@@ -1076,7 +1596,7 @@ h6:hover {
   flex-flow: column;
 }
 
-@media (--md) {
+@media (min-width: 768px) {
   .jr__item-meta {
     align-items: center;
     flex-flow: row wrap;
@@ -1096,6 +1616,7 @@ h6:hover {
     flex-basis: 100%;
   }
 }
+
 .social-share {
   align-items: center;
   border-top: 2px dotted var(--bg1);
@@ -1104,18 +1625,18 @@ h6:hover {
   gap: 0.9rem;
   margin: 3rem 0;
   padding-top: 3rem;
+}
 
-  & svg {
+.social-share svg {
     fill: var(--fg);
     width: 24px;
     height: 24px;
+  }
 
-    &.icon-tabler {
+.icon-tabler:is(.social-share svg) {
       fill: none;
       stroke: var(--fg);
     }
-  }
-}
 
 .social-share__item {
   background: var(--bg1);
@@ -1280,7 +1801,7 @@ h6:hover {
     href="/"
   >
     
-      <div class="logo__text">gruvbox</div>
+      <div class="logo__text">Mohamed Adel</div>
     
     <div class="logo__chevron">></div>
     <div class="logo__cursor">█</div>
@@ -1437,8 +1958,8 @@ h6:hover {
     
   <div class="jr-basics__image">
     <img
-      src="https://hugo-theme-gruvbox.schnerring.net/richard-hendricks.webp"
-      alt="Picture of Richard Hendricks"
+      src="/mohamed-adel.webp"
+      alt="Picture of Mohamed Adel Al-Sayed"
       width="250"
       height="250"
     />
@@ -1447,25 +1968,25 @@ h6:hover {
 
 
     
-      <div class="jr-basics__name">Richard Hendricks</div>
+      <div class="jr-basics__name">Mohamed Adel Al-Sayed</div>
     
 
     
-      <div class="jr-basics__label">Programmer</div>
+      <div class="jr-basics__label">Software Engineering Enthusiast</div>
     
 
     
-      <div class="jr-basics__email">richard.hendricks@piedpiper.com</div>
+      <div class="jr-basics__email">contact@mohamedadel.tech</div>
     
 
     
-      <div class="jr-basics__phone">(912) 555-4321</div>
+      <div class="jr-basics__phone">&#43;201095370591</div>
     
 
     
 
     
-      <div class="jr-basics__summary">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory.</div>
+      <div class="jr-basics__summary">A recent graduate of the Egyptian E-Learning University with a degree in Computers and Information Technology, bringing strong skills in programming (C, C&#43;&#43;, C#, Java, Python, JavaScript, TypeScript) and core areas such as data structures, algorithms, and software engineering. Experienced in Object-Oriented Programming, web technologies, and database systems, with a solid foundation in problem-solving and technical expertise.</div>
     
 
     
@@ -1474,7 +1995,7 @@ h6:hover {
       
 
       
-        <div class="jr-basics__location-city">San Francisco</div>
+        <div class="jr-basics__location-city">Ismailia</div>
       
 
       
@@ -1488,7 +2009,7 @@ h6:hover {
         
           
 
-<a href="https://github.com/schnerring/hugo-theme-gruvbox" target="_blank" rel="noreferrer me">
+<a href="https://github.com/mohamedaalsayed" target="_blank" rel="noreferrer me">
 
 <div class="jr-basics__profile-item">
   <div class="jr-basics__profile-icon">
@@ -1497,7 +2018,7 @@ h6:hover {
   </div>
 
   
-    <div class="jr-basics__profile-username">hugo-theme-gruvbox</div>
+    <div class="jr-basics__profile-username">mohamedaalsayed</div>
   
 </div>
 
@@ -1507,16 +2028,22 @@ h6:hover {
         
           
 
-<a href="https://github.com/schnerring/hugo-mod-json-resume" target="_blank" rel="noreferrer me">
+<a href="https://linkedin.com/in/mohamedaalsayed/" target="_blank" rel="noreferrer me">
 
 <div class="jr-basics__profile-item">
   <div class="jr-basics__profile-icon">
     
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path style="fill:;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"/> </g>
+</svg>
   </div>
 
   
-    <div class="jr-basics__profile-username">hugo-mod-json-resume</div>
+    <div class="jr-basics__profile-username">mohamedaalsayed</div>
   
 </div>
 
@@ -1527,96 +2054,6 @@ h6:hover {
       </div>
     
 
-    
-      <hr />
-      <div class="jr-basics__profile jr-basics__profile--row">
-        
-          
-
-<a href="https://x.com/SiliconHBO" target="_blank" rel="noreferrer me">
-
-<div class="jr-basics__profile-item">
-  <div class="jr-basics__profile-icon">
-    
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-  </div>
-
-  
-</div>
-
-
-</a>
-
-        
-          
-
-<a href="https://silicon-valley.fandom.com/wiki/Richard_Hendricks" target="_blank" rel="noreferrer me">
-
-<div class="jr-basics__profile-item">
-  <div class="jr-basics__profile-icon">
-    
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Fandom</title><path d="M8.123.008a.431.431 0 00-.512.42v9.746L4.104 6.666a.432.432 0 00-.66.064.428.428 0 00-.071.239v10.064a2.387 2.387 0 00.701 1.694l4.565 4.57a2.4 2.4 0 001.693.703h3.34c.635 0 1.242-.252 1.691-.701l4.565-4.572a2.394 2.394 0 00.699-1.694V13.41a2.39 2.39 0 00-.7-1.693L8.343.125a.427.427 0 00-.219-.117zM9.646 12.51a.719.719 0 01.508.21l1.848 1.85 1.844-1.85a.714.714 0 011.015 0l1.32 1.321a.724.724 0 01.212.508v1.406a.72.72 0 01-.21.508l-3.68 3.7a.72.72 0 01-1.019 0l-3.668-3.7a.716.716 0 01-.209-.506v-1.408a.71.71 0 01.211-.506l1.32-1.322a.713.713 0 01.508-.211Z"/></svg>
-  </div>
-
-  
-</div>
-
-
-</a>
-
-        
-          
-
-<a href="https://www.hbo.com/silicon-valley" target="_blank" rel="noreferrer me">
-
-<div class="jr-basics__profile-item">
-  <div class="jr-basics__profile-icon">
-    
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HBO</title><path d="M7.042 16.896H4.414v-3.754H2.708v3.754H.01L0 7.22h2.708v3.6h1.706v-3.6h2.628zm12.043.046C21.795 16.94 24 14.689 24 11.978a4.89 4.89 0 0 0-4.915-4.92c-2.707-.002-4.09 1.991-4.432 2.795.003-1.207-1.187-2.632-2.58-2.634H7.59v9.674l4.181.001c1.686 0 2.886-1.46 2.888-2.713.385.788 1.72 2.762 4.427 2.76zm-7.665-3.936c.387 0 .692.382.692.817 0 .435-.305.817-.692.817h-1.33v-1.634zm.005-3.633c.387 0 .692.382.692.817 0 .436-.305.818-.692.818h-1.33V9.373zm1.77 2.607c.305-.039.813-.387.992-.61-.063.276-.068 1.074.006 1.35-.204-.314-.688-.701-.998-.74zm3.43 0a2.462 2.462 0 1 1 4.924 0 2.462 2.462 0 0 1-4.925 0zm2.462 1.936a1.936 1.936 0 1 0 0-3.872 1.936 1.936 0 0 0 0 3.872Z"/></svg>
-  </div>
-
-  
-</div>
-
-
-</a>
-
-        
-          
-
-<a href="https://www.imdb.com/title/tt2575988/" target="_blank" rel="noreferrer me">
-
-<div class="jr-basics__profile-item">
-  <div class="jr-basics__profile-icon">
-    
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>IMDb</title><path d="M22.3781 0H1.6218C.7411.0583.0587.7437.0018 1.5953l-.001 20.783c.0585.8761.7125 1.543 1.5559 1.6191A.337.337 0 0 0 1.6016 24h20.7971a.4579.4579 0 0 0 .0437-.002c.8727-.0768 1.5568-.8271 1.5568-1.7085V1.7098c0-.8914-.696-1.6416-1.584-1.7078A.3294.3294 0 0 0 22.3781 0zm0 .496a1.2144 1.2144 0 0 1 1.1252 1.2139v20.5797c0 .6377-.4875 1.1602-1.1045 1.2145H1.6016c-.5967-.0543-1.0645-.5297-1.1053-1.1258V1.6284C.5371 1.0185 1.0184.5364 1.6217.496h20.7564zM4.7954 8.2603v7.3636H2.8899V8.2603h1.9055zm6.5367 0v7.3636H9.6707v-4.9704l-.6711 4.9704H7.813l-.6986-4.8618-.0066 4.8618h-1.668V8.2603h2.468c.0748.4476.1492.9694.2307 1.5734l.2712 1.8713.4407-3.4447h2.4817zm2.9772 1.3289c.0742.0404.122.108.1417.2034.0279.0953.0345.3118.0345.6442v2.8548c0 .4881-.0345.7867-.0955.8954-.0609.1152-.2304.1695-.5018.1695V9.5211c.204 0 .3457.0205.4211.0681zm-.0211 6.0347c.4543 0 .8006-.0265 1.0245-.0742.2304-.0477.4204-.1357.5694-.2648.1556-.1218.2642-.298.3251-.5219.0611-.2238.1021-.6648.1021-1.3224v-2.5832c0-.6986-.0271-1.1668-.0742-1.4039-.041-.237-.1431-.4543-.3126-.6437-.1695-.1973-.4198-.3324-.7456-.421-.3191-.0808-.8542-.1285-1.7694-.1285h-1.4244v7.3636h2.3051zm5.14-1.7827c0 .3523-.0199.5762-.0544.6708-.033.0947-.1894.1424-.3046.1424-.1086 0-.19-.0477-.2238-.1351-.041-.0887-.0609-.2986-.0609-.6238v-1.9469c0-.3324.0199-.5423.0543-.6237.0338-.0808.1086-.122.2171-.122.1153 0 .2709.0412.3114.1425.041.0947.0609.2986.0609.6032v1.8926zm-2.4747-5.5809v7.3636h1.7157l.1152-.4675c.1556.1894.3251.3324.5152.4271.1828.0881.4608.1357.678.1357.3047 0 .5629-.0748.7802-.237.2165-.1562.3589-.3462.4198-.5628.0543-.2173.0887-.543.0887-.9841v-2.0675c0-.4409-.0139-.7324-.0344-.8681-.0199-.1357-.0742-.2781-.1695-.4204-.1021-.1425-.2437-.251-.4272-.3325-.1834-.0742-.3999-.1152-.6576-.1152-.2172 0-.4952.0477-.6846.1285-.1835.0887-.353.2238-.5086.4007V8.2603h-1.8309z"/></svg>
-  </div>
-
-  
-</div>
-
-
-</a>
-
-        
-          
-
-<a href="https://en.wikipedia.org/wiki/List_of_Silicon_Valley_characters#Richard_Hendricks" target="_blank" rel="noreferrer me">
-
-<div class="jr-basics__profile-item">
-  <div class="jr-basics__profile-icon">
-    
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Wikipedia</title><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l.136.046 2.411-4.81-.482-1.067-1.658-3.264s-.318-.654-.428-.872c-.728-1.443-.712-1.518-1.447-1.617-.207-.023-.313-.05-.313-.149v-.468l.06-.045h4.292l.113.037v.451c0 .105-.076.15-.227.15l-.308.047c-.792.061-.661.381-.136 1.422l1.582 3.252 1.758-3.504c.293-.64.233-.801.111-.947-.07-.084-.305-.22-.812-.24l-.201-.021c-.052 0-.098-.015-.145-.051-.045-.031-.067-.076-.067-.129v-.427l.061-.045c1.247-.008 4.043 0 4.043 0l.059.045v.436c0 .121-.059.178-.193.178-.646.03-.782.095-1.023.439-.12.186-.375.589-.646 1.039l-2.301 4.273-.065.135 2.792 5.712.17.048 4.396-10.438c.154-.422.129-.722-.064-.895-.197-.172-.346-.273-.857-.295l-.42-.016c-.061 0-.105-.014-.152-.045-.043-.029-.072-.075-.072-.119v-.436l.059-.045h4.961l.041.045v.437c0 .119-.074.18-.209.18-.648.03-1.127.18-1.443.421-.314.255-.557.616-.736 1.067 0 0-4.043 9.258-5.426 12.339-.525 1.007-1.053.917-1.503-.031-.571-1.171-1.773-3.786-2.646-5.71l.053-.036z"/></svg>
-  </div>
-
-  
-</div>
-
-
-</a>
-
-        
-      </div>
     
   </div>
 
@@ -1632,6 +2069,8 @@ h6:hover {
       </main>
       <footer>
   <div class="copyright">
+    
+      Copyright © 2021
     
   </div>
 </footer>
